@@ -829,6 +829,67 @@ const Portfolio = () => {
               </div>
             </section>
 
+            {/* ===== BARAKA ERP FEATURED PROJECT ===== */}
+            <section className="py-16 sm:py-24 px-4 sm:px-6 bg-black">
+              <div className="max-w-7xl mx-auto">
+                <p className="text-white/60 text-xs sm:text-sm uppercase tracking-wider mb-4">Featured Project</p>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3">Baraka ERP</h2>
+                <p className="text-gray-400 text-sm sm:text-base mb-10 max-w-2xl">Enterprise Operations Platform — built to manage operations, finance, procurement, inventory and control in one unified system.</p>
+
+                <a
+                  href="https://baraka-erp.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block relative rounded-3xl overflow-hidden border border-white/10 hover:border-amber-400/40 transition-all duration-500 mb-12"
+                  onMouseEnter={e => { e.currentTarget.style.boxShadow = '0 0 60px 10px rgba(180,130,30,0.2)'; e.currentTarget.style.transform = 'scale(1.01) translateY(-4px)'; }}
+                  onMouseLeave={e => { e.currentTarget.style.boxShadow = 'none'; e.currentTarget.style.transform = 'scale(1) translateY(0)'; }}
+                  style={{ transition: 'box-shadow 0.5s ease, border-color 0.4s ease, transform 0.4s ease' }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent z-10 flex flex-col justify-end p-8 sm:p-12 opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                      <span className="text-xs font-semibold uppercase tracking-widest text-amber-400 border border-amber-400/40 rounded-full px-3 py-1 mb-3 inline-block">Live Project</span>
+                      <h3 className="text-2xl sm:text-4xl font-bold text-white mb-2">Baraka Enterprise ERP</h3>
+                      <p className="text-gray-300 text-sm sm:text-base">Click to explore the live platform →</p>
+                    </div>
+                  </div>
+                  <img
+                    src="/annet-portfolio/baraka-preview.jpg"
+                    alt="Baraka ERP Dashboard"
+                    className="w-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    style={{ aspectRatio: '16/7', objectPosition: 'center top' }}
+                  />
+                </a>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                  {[
+                    { icon: '📊', title: 'Operational Dashboard', desc: 'Real-time KPIs — exceptions, pending approvals, revenue, inventory alerts and purchase orders at a glance.' },
+                    { icon: '💰', title: 'Finance Management', desc: 'Accounts, invoices, payments and expenses with full audit trails and reconciliation workflows.' },
+                    { icon: '🛒', title: 'Procurement', desc: 'Purchase requests, orders, supplier management and goods receiving in one integrated flow.' },
+                    { icon: '📦', title: 'Inventory & Transfers', desc: 'Stock tracking, low-stock alerts, shortfall projections and branch-level transfer management.' },
+                    { icon: '🛡️', title: 'Control & Compliance', desc: 'Exception flagging, multi-tier approval workflows and priority-based risk classification.' },
+                    { icon: '🌐', title: 'Bilingual (EN / AR)', desc: 'Full Arabic/English toggle — designed for UAE and Gulf enterprise environments.' },
+                  ].map((feat, idx) => (
+                    <div key={idx} className="border border-white/10 hover:border-amber-400/30 rounded-2xl p-5 sm:p-6 bg-zinc-950 hover:bg-zinc-900 transition-all duration-300">
+                      <span className="text-2xl block mb-3">{feat.icon}</span>
+                      <h4 className="font-bold text-white text-sm sm:text-base mb-1">{feat.title}</h4>
+                      <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">{feat.desc}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-10 flex flex-wrap items-center gap-4">
+                  <a href="https://baraka-erp.vercel.app/" target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-full font-semibold text-sm hover:bg-gray-100 transition-all duration-300">
+                    View Live Site <ArrowRight size={16} />
+                  </a>
+                  <a href="https://github.com/port-annet/baraka-erp" target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-full text-sm font-medium text-white transition-all duration-300">
+                    View Repository <ArrowRight size={16} />
+                  </a>
+                </div>
+              </div>
+            </section>
+
             <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-black overflow-hidden">
               <div className="max-w-7xl mx-auto mb-8 sm:mb-12">
                 <p className="text-white/60 text-xs sm:text-sm uppercase tracking-wider mb-3 sm:mb-4">Testimonials</p>
