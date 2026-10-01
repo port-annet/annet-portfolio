@@ -740,12 +740,12 @@ const Portfolio = () => {
               <div className="relative z-10 max-w-6xl mx-auto px-3 sm:px-4 md:px-6 text-center py-4 sm:py-0">
                 <h1 className="text-2xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-[160px] 2xl:text-[200px] font-black mb-3 sm:mb-4 md:mb-6 lg:mb-8 2xl:mb-12 leading-tight sm:leading-none tracking-tight" data-cursor-hero>
                   <span className="inline-block relative group">
-                    <span className="block text-white">DIGITAL</span>
-                    <span className="block bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">DESIGNER</span>
+                    <span className="block text-white">COMPUTER</span>
+                    <span className="block bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">ENGINEER</span>
                   </span>
                 </h1>
                 <p className="text-xs sm:text-sm md:text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl mb-4 sm:mb-6 md:mb-8 lg:mb-12 2xl:mb-16 max-w-4xl 2xl:max-w-5xl mx-auto hero-description text-gray-300 px-1 sm:px-2">
-                  Turning Your Ideas Into Code, Design Into Experiences, And Curiosity Into Innovation.
+                  Building Scalable Software, Robust Frontend Interfaces, and AI-Powered Security Solutions.
                 </p>
                 
                 {/* Resume Download Button */}
@@ -920,7 +920,7 @@ const Portfolio = () => {
                   <div>
                     <h4 className="font-semibold text-sm sm:text-base mb-3 sm:mb-4">Socials</h4>
                     <div className="space-y-1 sm:space-y-2">
-                      <a href="https://github.com/anilannet" target="_blank" rel="noopener noreferrer" className="block text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Github</a>
+                      <a href="https://github.com/port-annet" target="_blank" rel="noopener noreferrer" className="block text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">Github</a>
                       <a href="https://www.linkedin.com/in/annetanilcse07/" target="_blank" rel="noopener noreferrer" className="block text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">LinkedIn</a>
                     </div>
                   </div>
@@ -981,11 +981,11 @@ const Portfolio = () => {
               <div className="absolute top-32 right-20 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
               <div className="absolute bottom-32 left-20 w-96 h-96 bg-gray-500/5 rounded-full blur-3xl"></div>
             </div>
-            <section className="min-h-screen flex items-center justify-end px-4 sm:px-6 lg:px-24 pt-20 sm:pt-32 relative z-10">
-              <div className="max-w-2xl w-full flex items-center gap-8 lg:gap-12">
+            <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-24 pt-20 sm:pt-32 relative z-10">
+              <div className="max-w-4xl w-full flex flex-col md:flex-row items-center gap-8 lg:gap-12">
                 {/* Profile Photo */}
-                <div className="hidden lg:block flex-shrink-0">
-                  <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
+                <div className="flex-shrink-0">
+                  <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-4 border-white/20 shadow-2xl">
                     <img 
                       src="/annet-portfolio/profile.png" 
                       alt="Annet Anil" 
@@ -995,11 +995,13 @@ const Portfolio = () => {
                 </div>
                 
                 {/* About Text */}
-                <div className="flex-1">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-8 sm:mb-12 animate-slide-in-left hover:text-white transition-all duration-300 cursor-pointer">ABOUT</h1>
+                <div className="flex-1 text-center md:text-left">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-6 sm:mb-8 animate-slide-in-left hover:text-white transition-all duration-300 cursor-pointer">ABOUT</h1>
                   <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed animate-fade-in-up animation-delay-300 hover:text-gray-200 transition-colors duration-300">
-                    It's Annet👋 , A digital creative, hailing  with a passion for blending technology, design, and innovation, I turn ideas into{' '}
-                    <span className="text-white font-semibold">code, design into experiences, and curiosity into innovation.</span>
+                    It's Annet👋, a Computer Engineering undergraduate with hands-on experience designing and building full-stack applications, AI-powered solutions, and secure digital experiences.
+                  </p>
+                  <p className="mt-4 text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed animate-fade-in-up animation-delay-600">
+                    Skilled in frontend and backend development, APIs, UI/UX, cloud technologies, and cybersecurity — with a strong ability to take ideas from concept to functional, real-world implementation. Selected by Karunya Institute of Technology and Sciences for the Student Visitor Exchange Program at the American University of Ras Al Khaimah (AURAK), UAE.
                   </p>
                 </div>
               </div>
@@ -1008,41 +1010,111 @@ const Portfolio = () => {
             <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-24">
               <p className="text-white/60 text-xs sm:text-sm uppercase tracking-wider mb-6 sm:mb-8 animate-fade-in-up">PROJECTS</p>
               
-              {/* AI Fake News Detector */}
-              <div className="mb-16 sm:mb-24 md:mb-32">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 sm:mb-12 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up animation-delay-300">
-                  AI FAKE NEWS DETECTOR SYSTEM
-                </h2>
+              {/* EchoCity */}
+              <div className="mb-16 sm:mb-24 md:mb-32 border-b border-white/10 pb-16">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up animation-delay-300">
+                    ECHOCITY
+                  </h2>
+                  <a 
+                    href="https://github.com/port-annet" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-full text-sm font-medium text-white transition-all duration-300 w-fit"
+                  >
+                    <span>View Repository</span>
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
                 <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-4xl animate-fade-in-up animation-delay-600">
-                  In a world driven by information, misinformation spreads faster than ever. To tackle this challenge, I built an AI-Powered Fake News Detection System that analyzes news headlines and articles in real-time to determine their authenticity with high confidence.
+                  Developed a full-stack web application with a Vite-based React frontend and Express backend, integrating MongoDB for persistent data and smooth API-driven workflows.
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 max-w-3xl">
+                  {[
+                    { icon: '⚛️', label: 'React / Vite' },
+                    { icon: '🟢', label: 'Node.js & Express' },
+                    { icon: '🍃', label: 'MongoDB' },
+                    { icon: '⚡', label: 'REST APIs' }
+                  ].map((item, idx) => (
+                    <div key={idx} className="border border-white/20 rounded-xl py-3 sm:py-4 px-3 sm:px-6 text-center hover:bg-white/5 hover:border-white/30 transition-all card-hover">
+                      <span className="text-xl sm:text-2xl block mb-1 sm:mb-2">{item.icon}</span>
+                      <span className="text-xs sm:text-sm font-medium">{item.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* AI Fake News Detector */}
+              <div className="mb-16 sm:mb-24 md:mb-32 border-b border-white/10 pb-16">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up animation-delay-300">
+                    AI FAKE NEWS DETECTOR SYSTEM
+                  </h2>
+                  <a 
+                    href="https://github.com/port-annet/FakeNewsDetector" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-full text-sm font-medium text-white transition-all duration-300 w-fit"
+                  >
+                    <span>View Repository</span>
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+                <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-4xl animate-fade-in-up animation-delay-600">
+                  In a world driven by information, misinformation spreads faster than ever. Built an AI-Powered Fake News Detection System that analyzes news headlines and articles in real-time to determine authenticity with ~84% accuracy.
                 </p>
                 <div className="text-xs sm:text-sm md:text-base text-gray-400 mb-8 sm:mb-12 max-w-4xl leading-relaxed space-y-4">
                   <p><strong className="text-gray-300">🧠 What this project does:</strong><br/>
-                  Users can paste any news headline or article, and the system instantly classifies it as Real or Fake with a confidence score. The goal is simple: make fact-checking faster, smarter, and more accessible.</p>
+                  Users paste any news headline or article, and the system instantly classifies it as Real or Fake with a confidence score.</p>
                   
                   <p><strong className="text-gray-300">💻 Tech Stack & Architecture:</strong><br/>
                   • Frontend: Streamlit with custom CSS (Dark/Cyber UI aesthetic)<br/>
                   • Backend: Python 3.9+, Pandas for data processing<br/>
                   • Machine Learning: Logistic Regression + TF-IDF Vectorization<br/>
-                  • Dataset: FakeNewsNet (GossipCop dataset with 20k+ articles)<br/>
                   • Model Accuracy: ~84% on test data</p>
-                  
-                  <p><strong className="text-gray-300">⚙️ Key Features:</strong><br/>
-                  • Real-time fake news verification with confidence scoring<br/>
-                  • Live "Breaking News" ticker for immersive experience<br/>
-                  • Fake News Feed displaying actual misinformation examples<br/>
-                  • Modern, responsive UI with dynamic interactions</p>
-                  
-                  <p><strong className="text-gray-300">🧪 Model Approach:</strong><br/>
-                  I used TF-IDF to convert text into meaningful numerical vectors and trained a Logistic Regression classifier to distinguish real vs fake news. While I explored deep learning models like LSTMs, Logistic Regression provided nearly the same accuracy with significantly faster performance — making it ideal for real-time web deployment.</p>
                 </div>
                 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 max-w-3xl">
                   {[
                     { icon: '🤖', label: 'Machine Learning' },
                     { icon: '🐍', label: 'Python' },
-                    { icon: '📊', label: 'Data Analysis' },
+                    { icon: '📊', label: 'Streamlit NLP' },
                     { icon: '🎯', label: '84% Accuracy' }
+                  ].map((item, idx) => (
+                    <div key={idx} className="border border-white/20 rounded-xl py-3 sm:py-4 px-3 sm:px-6 text-center hover:bg-white/5 hover:border-white/30 transition-all card-hover">
+                      <span className="text-xl sm:text-2xl block mb-1 sm:mb-2">{item.icon}</span>
+                      <span className="text-xs sm:text-sm font-medium">{item.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* AI-Enabled AR Indoor Navigation System */}
+              <div className="mb-16 sm:mb-24 md:mb-32 border-b border-white/10 pb-16">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up animation-delay-300">
+                    AI-ENABLED AR INDOOR NAVIGATION SYSTEM
+                  </h2>
+                  <a 
+                    href="https://github.com/port-annet/navme" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-full text-sm font-medium text-white transition-all duration-300 w-fit"
+                  >
+                    <span>View Repository</span>
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
+                <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-4xl animate-fade-in-up animation-delay-600">
+                  Developed an AR indoor-navigation solution for college or mall environments featuring voice-assisted destination routing and real-time emergency-exit guidance.
+                </p>
+                
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 max-w-3xl">
+                  {[
+                    { icon: '👓', label: 'Augmented Reality' },
+                    { icon: '🎙️', label: 'Voice Assistant' },
+                    { icon: '🚨', label: 'Emergency Guidance' },
+                    { icon: '📍', label: 'Indoor Mapping' }
                   ].map((item, idx) => (
                     <div key={idx} className="border border-white/20 rounded-xl py-3 sm:py-4 px-3 sm:px-6 text-center hover:bg-white/5 hover:border-white/30 transition-all card-hover">
                       <span className="text-xl sm:text-2xl block mb-1 sm:mb-2">{item.icon}</span>
@@ -1054,22 +1126,33 @@ const Portfolio = () => {
 
               {/* Bus Driver System */}
               <div>
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 sm:mb-12 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up animation-delay-300">
-                  BUS DRIVER BEHAVIOUR MANAGEMENT SYSTEM
-                </h2>
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up animation-delay-300">
+                    BUS DRIVER BEHAVIOUR MANAGEMENT SYSTEM
+                  </h2>
+                  <a 
+                    href="https://github.com/port-annet" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 rounded-full text-sm font-medium text-white transition-all duration-300 w-fit"
+                  >
+                    <span>View Repository</span>
+                    <ArrowRight size={16} />
+                  </a>
+                </div>
                 <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6 sm:mb-8 max-w-4xl animate-fade-in-up animation-delay-600">
-                  I have developed a IOT based Bus Driver System that helps track the speed of a bus and the distance at which it overtakes during traffic which helps control and evaluate the discipline of the bus driver during taxi.
+                  Developed an IoT-based Bus Driver System that tracks bus speed and overtaking distance during transit to evaluate and improve driver discipline. Won 🏆 2nd Place at Techscape 2024 IoT Competition.
                 </p>
-                <p className="text-xs sm:text-sm md:text-base text-gray-400 mb-12 sm:mb-16 max-w-4xl leading-relaxed">
-                  Components such as Ultrasonic Distance Sensor HC-SR04 Module, OLED Display, Raspberry Pi UNO RP2040 Development Board were used in the project.
+                <p className="text-xs sm:text-sm md:text-base text-gray-400 mb-8 sm:mb-12 max-w-4xl leading-relaxed">
+                  Components used: Ultrasonic Distance Sensor HC-SR04 Module, OLED Display, Raspberry Pi RP2040 Development Board.
                 </p>
                 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 md:gap-4 max-w-3xl">
                   {[
-                    { icon: '📡', label: 'IOT' },
-                    { icon: '⏱️', label: 'Time tracking' },
-                    { icon: '📊', label: 'Sensors' },
-                    { icon: '📄', label: 'Reports' }
+                    { icon: '📡', label: 'IoT & Sensors' },
+                    { icon: '⏱️', label: 'RP2040 Board' },
+                    { icon: '📊', label: 'Speed & Distance Tracking' },
+                    { icon: '🏆', label: 'Techscape 2nd Place' }
                   ].map((item, idx) => (
                     <div key={idx} className="border border-white/20 rounded-xl py-3 sm:py-4 px-3 sm:px-6 text-center hover:bg-white/5 hover:border-white/30 transition-all card-hover">
                       <span className="text-xl sm:text-2xl block mb-1 sm:mb-2">{item.icon}</span>
@@ -1147,7 +1230,50 @@ const Portfolio = () => {
               </div>
             </section>
 
-            <section className="py-32 px-6 lg:px-24 bg-black">
+            <section className="py-24 px-6 lg:px-24 bg-black border-t border-white/10">
+              <p className="text-sm uppercase tracking-wider text-white/60 mb-6 animate-fade-in-up">Education</p>
+              <h2 className="text-5xl md:text-6xl font-bold mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up animation-delay-300">Academic Background</h2>
+
+              <div className="max-w-6xl space-y-12">
+                {[
+                  {
+                    institution: 'American University of Ras Al Khaimah (AURAK)',
+                    period: 'Aug 2026 – Jan 2027',
+                    role: 'Student Visitor Exchange Program — Computer Engineering',
+                    location: 'Ras Al Khaimah, UAE',
+                    details: 'Selected by Karunya Institute of Technology and Sciences for the Student Visitor Exchange Program.'
+                  },
+                  {
+                    institution: 'Karunya Institute of Technology and Sciences',
+                    period: 'Aug 2023 – May 2027',
+                    role: 'B.Tech. Computer Engineering',
+                    location: 'Coimbatore, India',
+                    details: 'Specializing in software engineering, full-stack web applications, cybersecurity, and artificial intelligence.'
+                  },
+                  {
+                    institution: 'GEMS Millennium School',
+                    period: 'Mar 2017 – May 2021',
+                    role: 'High School Diploma',
+                    location: 'Sharjah, UAE',
+                    details: 'Completed High School education in UAE.'
+                  }
+                ].map((edu, idx) => (
+                  <div key={idx} className="grid md:grid-cols-2 gap-8 border-b border-white/10 pb-12">
+                    <div>
+                      <h3 className="text-2xl font-bold mb-1">{edu.period}</h3>
+                      <p className="text-gray-500 text-sm">{edu.location}</p>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-2">{edu.institution}</h3>
+                      <p className="text-white/80 font-medium mb-3">{edu.role}</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">{edu.details}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            <section className="py-32 px-6 lg:px-24 bg-black border-t border-white/10">
               <p className="text-sm uppercase tracking-wider text-white/60 mb-6 animate-fade-in-up">Experience</p>
               <h2 className="text-6xl md:text-7xl font-bold mb-24 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent animate-fade-in-up animation-delay-300">In The Past</h2>
 
@@ -1163,36 +1289,46 @@ const Portfolio = () => {
                 </div>
                 {[
                   {
-                    period: 'December 2025 - Present',
-                    title: 'ReflexLabs UI/UX Engineer, Frontend Developer',
+                    period: 'Jan 2026 – Jul 2026',
+                    title: 'Zyrops — Cybersecurity Intern',
+                    location: 'Kerala, India',
                     points: [
-                      'Design and develop user-centric interfaces with a focus on exceptional user experience.',
-                      'Implement responsive frontend solutions using modern web technologies.',
-                      'Collaborate with cross-functional teams to deliver high-quality digital products.'
+                      'Contributed to cybersecurity-focused work and gained practical exposure to security assessment and analysis workflows.',
+                      'Applied cybersecurity fundamentals from industry-aligned training to internship tasks and technical problem solving.'
                     ]
                   },
                   {
-                    period: '2025 - present',
-                    title: 'Content Creator Head',
+                    period: 'Sep 2025 – May 2026',
+                    title: 'ReflexLabs — UI/UX Engineer & Frontend Developer',
+                    location: 'Coimbatore, India',
                     points: [
-                      'Led a team of content creators in developing engaging software solutions using various web development tools.',
-                      'Designed and implemented innovative content strategies to enhance user experience and engagement.',
-                      'Collaborated with cross-functional teams to ensure seamless integration of content across platforms.'
+                      'Developed responsive frontend interfaces using React, Vite and Tailwind CSS, translating UI designs into reusable components.',
+                      'Contributed to frontend development using modern web technologies and collaborated on usability-focused improvements.'
                     ]
                   },
                   {
-                    period: 'Jun 2025 - Jul 2025',
-                    title: 'AWS Intern',
+                    period: 'Jul 2025 – Aug 2026',
+                    title: 'CIRA — Content Creator Head',
+                    location: 'Coimbatore, India',
                     points: [
-                      'Assisted in the implementation of various AWS tools to enhance operational efficiency.',
-                      'Collaborated with team members to understand and execute different AWS roles effectively.',
-                      'Gained hands-on experience in cloud computing and its applications in small industries.'
+                      'Led a 10-member creative team responsible for technical-event content across Instagram, LinkedIn and YouTube.',
+                      'Planned and produced digital content for technical initiatives and events while coordinating creative deliverables.'
+                    ]
+                  },
+                  {
+                    period: 'Jun 2025 – Jul 2025',
+                    title: 'NSIC — Amazon Web Services (AWS) Intern',
+                    location: 'Telangana, India',
+                    points: [
+                      'Participated in AWS-focused technical projects through the National Small Industries Corporation.',
+                      'Gained hands-on experience in cloud computing and its applications.'
                     ]
                   }
                 ].map((exp, idx) => (
                   <div key={idx} className="grid md:grid-cols-2 gap-12 border-b border-white/10 pb-24">
                     <div>
                       <h3 className="text-3xl font-bold mb-2">{exp.period}</h3>
+                      <p className="text-gray-500 text-sm">{exp.location}</p>
                     </div>
                     <div>
                       <h3 className="text-3xl font-bold mb-6">{exp.title}</h3>
